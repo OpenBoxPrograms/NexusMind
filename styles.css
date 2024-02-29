@@ -1,0 +1,103 @@
+.logo{
+    width: 5%;
+    height: auto;
+}
+
+.logo-font{
+    font-family: 'Montserrat';
+}
+
+.my-navbar{
+    margin-left:50px;
+}
+
+.my-navbar-item{
+    font-family: 'Inter';
+    color: black;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+.intro-header{
+    font-family: 'Poppins';
+    font-size: 64px;
+    font-weight: 600;
+    color: black;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 850px;
+}
+
+.standard-button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    margin-left: 210px;
+}
+
+.contact-button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.my-section{
+    margin-top: 150px;
+    background-color: green;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.logo-footer{
+    width: 5%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.logo-font-footer{
+    font-family: 'Montserrat';
+    margin-left: 10px;
+    width: 50px;
+    height:auto;
+    margin-top: 40px;
+    line-height: 50px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.content-font-footer{
+    font-family: 'Montserrat';
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.socials-buttons{
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    background: rgb(64, 64, 64);
+    cursor: pointer;
+    color:red;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.socials-images{
+    width: 50px;
+    border-radius: 6px;
+}
