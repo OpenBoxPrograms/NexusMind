@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Nexus Mind</title>
+    <link rel="icon" type="image/x-icon" href="logo.svg">
 </head>
 <body>
     <nav class="my-navbar navbar navbar-expand-lg bg-body-tertiary">
@@ -28,10 +29,7 @@
                         <a class="nav-link me-4 my-navbar-item" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-4 my-navbar-item" href="classes.html">Classes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4 my-navbar-item" href="#contact">Contact</a>
+                        <a class="nav-link me-4 my-navbar-item" href="programs.html">Programs</a>
                     </li>
                 </ul>
             </div>
@@ -42,23 +40,40 @@
             <h1 class="intro-header">
                 Learn more about Artificial Intelligence with Nexus Mind!
             </h1>
-            <b class="standard-button">
-                Sign up for a class
-            </b>
-            <b class="contact-button">
-                Contact for more info
-            </b>
+            <button class="standard-button" onclick="window.location.href='programs.html'">
+                Sign up for a program
+            </button>
+            <button class="contact-button" onclick="window.location.href='application_page.html'">
+                Become an instructor
+            </button>
         </div>
         <div class="intro-image">
             <img src="AI.jpg" style="border-radius: 6px; height: 60%;">
         </div>
     </div>
-    <section class="my-section">
-        <h1 class="get-started-header">Get started with Nexus Mind now!</h1>
-        <b class="standard-button">
-            Sign up for a class
-        </b>
-    </section> 
+    <div class="intro-cards row text-center">
+        <div class="intro-cards-item col-lg text-dark py-4 shadow rounded px-lg-5 mx-lg-2 my-lg-0 my-3">
+                <i class="text-primary" style="font-size: 6rem;"></i>
+                <h2 class="text-success">Connect</h2>
+                <p class="text-start">
+                    Meet other students across the country who share your passions.
+                </p>
+        </div>
+        <div class="intro-cards-item col-lg text-dark shadow rounded py-4 px-lg-5 mx-lg-2 my-lg-0 my-3">
+            <i class="bi-search text-primary" style="font-size: 6rem;"></i>
+                <h2 class="text-center text-info my-2">Learn</h2>
+                <p class="text-start">
+                    Immerse yourself in key theories and coding skills to kickstart your future projects in AI.
+                </p>
+        </div>
+        <div class="intro-cards-item col-lg text-dark shadow rounded py-4 px-lg-5 mx-lg-2 my-lg-0 my-3">
+            <i class="bi-chat-heart text-primary" style="font-size: 6rem;"></i>
+            <h2 class="text-center text-danger my-2">Innovate</h2>
+            <p class="text-start">
+                Build AI Solutions for real-world problems.
+            </p>
+        </div>
+    </div>
     <section id="contact" class="footer">
         <div class="footer-content">
             <img src="logo-no-background.png" class="logo-footer">
