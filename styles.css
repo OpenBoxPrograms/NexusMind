@@ -32,38 +32,75 @@
     font-size: 64px;
     font-weight: 600;
     color: black;
-    margin-top: 125px;
-    margin-bottom: 50px;
-    margin-left: 200px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 25%;
     margin-right: 10%;
 }
 
 .intro-image{
     max-width: 100%;
     height: auto;
-    margin-top: 125px;
+    margin-top: 7%;
     margin-right: 10%;
-    border-radius: 6px;
+    border-radius: 2%;
 }
 
 .standard-button{
     background-color: black;
     color: white;
-    padding: 20px;
-    border-radius: 6px;
+    padding: 2.5%;
+    border-radius: 2%;
     font-family: 'Poppins';
     font-weight: bold;
-    margin-left: 210px;
+    margin-left: 25%;
+    font-size: 18px;
 }
 
 .contact-button{
     background-color: black;
     color: white;
-    padding: 20px;
-    border-radius: 6px;
+    padding: 2.5%;
+    border-radius: 2%;
     font-family: 'Poppins';
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 4%;
+    font-size: 18px;
+}
+
+
+/* Media query for screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .intro-header {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+    .standard-button{
+        font-size: 16px;
+    }
+    .contact-button{
+        font-size: 16px;
+        margin-left: 25%;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .intro-image{
+        order: -1;
+    }
+}
+
+/* Media query for screens smaller than 576px (mobile devices) */
+@media (max-width: 576px) {
+    .intro-header {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .standard-button{
+        font-size: 12px;
+    }
+    .contact-button{
+        font-size: 12px;
+        margin-left: 25%;
+    }
 }
 
 .intro-cards{
@@ -98,17 +135,17 @@
 .logo-footer{
     width: 5%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 2%;
     margin-left: 5%;
 }
 
 .logo-font-footer{
     font-family: 'Montserrat';
     margin-left: 1%;
-    width: 50px;
+    width: 10%;
     height:auto;
-    margin-top: 50px;
-    line-height: 50px;
+    margin-top: 2.5%;
+    line-height: 7%;
 }
 
 .footer-content{
@@ -118,25 +155,26 @@
 
 .content-font-footer{
     font-family: 'Montserrat';
-    margin-top: 10px;
+    margin-top: 1%;
     margin-left: 5%;
 }
 
 .socials-buttons{
     display: inline-block;
-    border: none;
     padding: 0px;
     background: rgb(64, 64, 64);
     cursor: pointer;
     color:red;
-    border-radius: 6px;
+    border-radius: 4%;
     margin-left: 1%;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
+    width: 4%;
 }
 
 .socials-images{
-    width: 50px;
-    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
 }
 
 .about-header{
@@ -151,15 +189,6 @@
     font-family: 'Poppins';
 }
 
-.about-card{
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
 
 .about-card-area{
     display: flex;
@@ -175,32 +204,27 @@
     font-family: 'Poppins';
 }
 
-.about-card-image{
-    height: 200px;
-    width:auto;
-}
-
 .program{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 200px;
-    margin-bottom: 40px;
+    margin-top: 3%;
+    margin-left: 7.5%;
+    margin-right: 10%;
+    margin-bottom: 3%;
 }
 
 .program-card{
     border-radius: 10px;
     height:max-content;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 
 .program-header{
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 .program-name{
-    margin-right: 20px;
+    margin-right: 1.5%;
 }
 
 .program-button {
@@ -210,17 +234,17 @@
     text-align: center; /* Center text */
     text-decoration: none; /* Remove underline */
     display: inline-block;
-    padding: 10px 20px;
-    margin: 4px 2px;
+    padding: 1em 2em;
+    margin: 1em 0.5em;
     cursor: pointer; /* Cursor pointer on hover */
-    border-radius: 69px;
+    border-radius: 999px;
 }
 
 .accordion{
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 1em;
     width: 100%;
     text-align: left;
     border: none;
@@ -229,7 +253,7 @@
 }
 
 .panel{
-    padding: 0 18px;
+    padding: 0 1em;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -288,7 +312,7 @@ html {
 }
   
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
   
 .column {
@@ -297,20 +321,28 @@ html {
     margin-bottom: 16px;
     padding: 0 8px;
 }
+
+/* Clear floats after columns */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
   
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
-        display: block;
+        padding: 0 4px;
     }
 }
   
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
 }
   
 .container {
-    padding: 0 16px;
+    padding: 0 5%;
 }
   
 .container::after, .row::after {
