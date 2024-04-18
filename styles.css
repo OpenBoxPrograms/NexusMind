@@ -7,13 +7,6 @@
     font-family: 'Montserrat';
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 3%;
-}
-
 .my-navbar{
     margin-left: 5%;
     margin-right: 5%;
@@ -27,59 +20,51 @@
     line-height: 1.15;
 }
 
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items with space in between */
+    padding: 0 10%; /* Add padding to the sides */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .intro-header{
     font-family: 'Poppins';
     font-size: 64px;
     font-weight: 600;
     color: black;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    margin-left: 25%;
-    margin-right: 10%;
+    padding-top: 15px; /* Padding for spacing */
+    padding-bottom: 5px; /* Padding for spacing */
 }
 
 .intro-image{
-    max-width: 100%;
+    width: 50%; /* Adjust width as needed */
     height: auto;
-    margin-top: 7%;
-    margin-right: 10%;
     border-radius: 2%;
 }
 
-.standard-button{
+.button-container{
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange buttons side by side */
+}
+
+.standard-button, .contact-button{
     background-color: black;
     color: white;
-    padding: 2.5%;
+    padding: 10px 20px;
     border-radius: 2%;
     font-family: 'Poppins';
     font-weight: bold;
-    margin-left: 25%;
     font-size: 18px;
+    margin-right: 10%; /* Space between buttons */
 }
-
-.contact-button{
-    background-color: black;
-    color: white;
-    padding: 2.5%;
-    border-radius: 2%;
-    font-family: 'Poppins';
-    font-weight: bold;
-    margin-left: 4%;
-    font-size: 18px;
-}
-
 
 /* Media query for screens smaller than 768px (tablets and mobile devices) */
 @media (max-width: 768px) {
     .intro-header {
         font-size: 30px; /* Adjust font size for smaller screens */
-    }
-    .standard-button{
-        font-size: 16px;
-    }
-    .contact-button{
-        font-size: 16px;
-        margin-left: 25%;
     }
     .content{
         flex-direction: column-reverse;
@@ -92,14 +77,20 @@
 /* Media query for screens smaller than 576px (mobile devices) */
 @media (max-width: 576px) {
     .intro-header {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
-    .standard-button{
-        font-size: 12px;
+
+    .content{
+        flex-direction: column-reverse;
     }
-    .contact-button{
-        font-size: 12px;
-        margin-left: 25%;
+
+    .standard-button, .contact-button{
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+    .intro-image{
+        order: -1;
+        width: 100%;
     }
 }
 
